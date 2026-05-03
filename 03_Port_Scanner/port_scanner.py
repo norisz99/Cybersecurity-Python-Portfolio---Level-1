@@ -33,7 +33,7 @@ def scan_ports(target_ip, ports):
 if __name__ == "__main__":
     target = input("Adj meg egy IP címet (vagy domain-t, pl. google.com): ")
     # A leggyakoribb portokat vizsgáljuk
-    common_ports = [21, 22, 23, 25, 53, 80, 110, 135, 139, 443, 445, 3306, 3389, 8080]
+    common_ports = range(1, 1025)
     
     scan_ports(target, common_ports)
     input("\nNyomj Entert a kilépéshez...")
